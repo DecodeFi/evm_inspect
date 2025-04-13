@@ -1,0 +1,13 @@
+[package]
+name = "evm_inspect"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+alloy = { version = "0.14.0", features = ["full"] }
+anyhow = "1.0.97"
+axum = "0.8.3"
+hex = "0.4.3"
+revm = { git = "ssh://git@github.com/mrworker27/revm.git", branch = "main", features = ["alloydb", "serde-json", "serde"] }
+serde = "1.0.219"
+tokio = { version = "1.44.2", features = ["rt-multi-thread"] }
